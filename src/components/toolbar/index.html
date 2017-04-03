@@ -1,0 +1,7 @@
+<div class="toolbar">
+  <i class="fa fa-undo" m:on:click="go(1)"></i>
+  <i class="fa fa-chevron-circle-left" m:on:click="prev"></i>
+  <span class="pager">{{index}}/{{total}}</span>
+  <i class="fa fa-chevron-circle-right" m:on:click="next"></i>
+  <i class="fa fa-{{isPlay?'stop':'play'}}" m:on:click="togglePlay"></i>
+</div>
