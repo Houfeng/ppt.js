@@ -48,13 +48,45 @@ html, body, .ppt, .stage, .slide-container, .slide {
     display: table;
     .slide {
       padding: 30px 60px;
-      font: 24px/2 'RobotoMono', 'PingFang SC', 'Lantinghei SC', 'Helvetica Neue', Helvetica, Arial, 'Microsoft YaHei', 'STHeitiSC-Light', 'simsun', 'WenQuanYi Zen Hei', 'WenQuanYi Micro Hei', 'sans-serif';
+      font: 24px/1.8 'RobotoMono', 'PingFang SC', 'Lantinghei SC', 'Helvetica Neue', Helvetica, Arial, 'Microsoft YaHei', 'STHeitiSC-Light', 'simsun', 'WenQuanYi Zen Hei', 'WenQuanYi Micro Hei', 'sans-serif';
       letter-spacing: 2px;
-      color: rgba(245, 245, 245, .85);
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+      color: rgba(250, 250, 250, .8);
       display: table-cell;
       vertical-align: middle;
       background-size: 100%;
+      h1, h2, h3, h4, h5, h6, ol, ul {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+        border-bottom: 0;
+      }
+      table {
+        color: rgba(35, 35, 35, .8);
+        font-size: 20px;
+        tr {
+          background-color: rgba(255, 255, 255, .75);
+          border-top: 1px solid rgba(150, 150, 150, .8);
+          &:nth-child(2n) {
+            background-color: rgba(235, 235, 235, .8);
+          }
+        }
+      }
+      pre {
+        background-color: rgba(22, 22, 22, .5);
+        color: rgba(255, 255, 255, .6);
+        code {
+          font-size: 22px;
+          .token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
+            background: transparent;
+          }
+          background-color:transparent;
+        }
+      }
+      code {
+        background-color: rgba(0, 0, 0, 0.15);
+      }
+      blockquote {
+        color: rgba(250, 250, 250, .6);
+        border-left: 0.25em solid rgba(200, 200, 200, .6);
+      }
       img {
         max-width: 80%;
       }
