@@ -41,6 +41,9 @@ const loaders = [{
 }, {
   test: /.*mokit.*\.js$/,
   loader: "babel"
+},{
+  test: /.*general-router.*\.js$/,
+  loader: "babel"
 }, {
   test: /\.json$/,
   loader: "json",
