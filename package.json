@@ -1,6 +1,6 @@
 {
   "name": "ppt.js",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Hello Mokit",
   "main": "./src/app.js",
   "scripts": {
@@ -57,9 +57,6 @@
     "karma-webpack": "1.8.0",
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
-    "mokit": "^3.0.15",
-    "mokit-router": "^1.0.7",
-    "mokit-touch": "^1.0.1",
     "mokit-transition": "^1.0.1",
     "nokit-filter-proxy": "0.0.8",
     "nokitjs": "^1.26.3",
@@ -70,6 +67,9 @@
     "webpack": "^1.14.0"
   },
   "dependencies": {
-    "mditor": "^1.2.0"
+    "mditor": "^1.2.1",
+    "mokit": "^3.0.15",
+    "mokit-router": "^1.0.7",
+    "mokit-touch": "^1.0.1"
   }
 }

@@ -24,17 +24,19 @@ module.exports = new mokit.Component({
     let index = this.$route.params.index || 1;
     this.index = parseInt(index);
   },
-  go(index) {
+  go(index, effect) {
     this.index = index;
     if (this.index > this.total) this.index = 1;
     if (this.index < 1) this.index = this.total;
-    this.$router.go(`/slide/${this.index}`, new mokit.Transition(random(1, 68)));
+    let slide = this.$root.slides[this.index - 1];
+    effect = effect || parseInt(slide.getAttribute('effect') || random(1, 68));
+    this.$router.go(`/slide/${this.index}`, new mokit.Transition(effect));
   },
-  next() {
-    this.go(++this.index);
+  next(effect) {
+    this.go(++this.index, effect);
   },
-  prev() {
-    this.go(--this.index);
+  prev(effect) {
+    this.go(--this.index, effect);
   },
   play() {
     document.body.requestFullscreen();

@@ -31,5 +31,11 @@ module.exports = new mokit.Component({
           break;
       }
     });
+  },
+  onSwipeLeft() {
+    this.toolbar.next(17);
+  },
+  onSwipeRight() {
+    this.toolbar.next(18);
   }
 });
