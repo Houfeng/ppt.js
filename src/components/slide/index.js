@@ -11,7 +11,8 @@ module.exports = new mokit.Component({
     };
   },
   onCreate() {
-    let index = parseInt(this.$route.params.index) - 1;
+    let index = this.$route.params.index || 1;
+    index = parseInt(index) - 1;
     let slide = this.$root.slides[index];
     this.content = slide.innerHTML;
     this.color = slide.getAttribute('bgcolor') || 'rgb(' + random(20, 150) + ',' +

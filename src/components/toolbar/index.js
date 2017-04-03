@@ -21,7 +21,8 @@ module.exports = new mokit.Component({
   },
   onReady() {
     this.total = this.$parent.slides.length;
-    this.index = parseInt(this.$route.params.index);
+    let index = this.$route.params.index || 1;
+    this.index = parseInt(index);
   },
   go(index) {
     this.index = index;

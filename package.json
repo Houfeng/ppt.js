@@ -1,6 +1,6 @@
 {
   "name": "ppt.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Hello Mokit",
   "main": "./src/app.js",
   "scripts": {
