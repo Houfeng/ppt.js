@@ -6,9 +6,10 @@ module.exports = new mokit.Component({
   data() {
     return {
       bgcolor: '#000',
-      style: '',
+      bgimage: 'none',
       content: '',
-      align: 'left'
+      align: 'left',
+      style: ''
     };
   },
   onCreate() {
@@ -20,6 +21,8 @@ module.exports = new mokit.Component({
       random(20, 180) + ',' +
       random(20, 180) + ')';
     this.align = slide.getAttribute('align') || 'left';
+    this.bgimage = slide.getAttribute('bgimage');
+    this.bgimage = this.bgimage ? this.bgimage = `url('${this.bgimage}')` : 'none';
     this.style = slide.getAttribute('style') || '';
   }
 });
