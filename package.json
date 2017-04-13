@@ -1,6 +1,6 @@
 {
   "name": "ppt.js",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Hello Mokit",
   "main": "./src/app.js",
   "scripts": {
@@ -25,6 +25,7 @@
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-eslint": "^7.1.1",
+    "babel-helpers": "^6.24.1",
     "babel-loader": "^6.2.10",
     "babel-plugin-transform-runtime": "^6.15.0",
     "babel-polyfill": "^6.20.0",
@@ -57,7 +58,6 @@
     "karma-webpack": "1.8.0",
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
-    "mokit-transition": "^1.0.1",
     "nokit-filter-proxy": "0.0.8",
     "nokitjs": "^1.26.3",
     "phantomjs-prebuilt": "^2.1.13",
@@ -67,9 +67,10 @@
     "webpack": "^1.14.0"
   },
   "dependencies": {
-    "mditor": "^1.2.1",
+    "mditor": "^1.2.7",
     "mokit": "^3.0.15",
     "mokit-router": "^1.0.7",
-    "mokit-touch": "^1.0.1"
+    "mokit-touch": "^1.0.1",
+    "mokit-transition": "^1.0.1"
   }
 }
